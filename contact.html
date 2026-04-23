@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact &mdash; Lovepreet Singh IT Professional</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ═══════════════ HEADER ═══════════════ -->
+  <header id="header" role="banner">
+    <div class="inner">
+      <span class="logo">lovepreet<span>.</span>singh</span>
+      <nav id="navigation" aria-label="Main navigation">
+        <button class="nav-toggle" id="navToggle"
+                aria-expanded="false"
+                aria-controls="navMenu"
+                aria-label="Toggle navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul id="navMenu" role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ═══════════════ CONTENT ═══════════════ -->
+  <main id="content">
+
+    <div style="margin-bottom:2.5rem;">
+      <p class="tag">Get In Touch</p>
+      <h1 class="section-title">Contact <em>Me</em></h1>
+    </div>
+
+    <div class="contact-layout">
+
+      <!-- Info panel -->
+      <aside class="contact-info-panel" aria-label="Contact information">
+        <h2>Let&rsquo;s Work Together</h2>
+        <p>
+          Whether you need a security assessment, a cloud migration, IT support,
+          or a new website, I am here to help. Fill out the form and I will
+          respond within one business day.
+        </p>
+
+        <div class="c-detail">
+          <div class="c-icon" aria-hidden="true">&#128205;</div>
+          <div class="c-detail-text">
+            <strong>Office Address</strong>
+            <span>274 Notre Dame Avenue<br />Winnipeg, MB R3B 1N8<br />Canada</span>
+          </div>
+        </div>
+
+        <div class="c-detail">
+          <div class="c-icon" aria-hidden="true">&#128337;</div>
+          <div class="c-detail-text">
+            <strong>Business Hours</strong>
+            <span>Mon &ndash; Fri: 9:00 AM &ndash; 6:00 PM CST<br />
+                  Sat: 10:00 AM &ndash; 3:00 PM CST<br />
+                  Sun: Closed</span>
+          </div>
+        </div>
+
+        <div class="c-detail">
+          <div class="c-icon" aria-hidden="true">&#128231;</div>
+          <div class="c-detail-text">
+            <strong>Email</strong>
+            <span><a href="mailto:lovepreet@lpsingh.dev">lovepreet@lpsingh.dev</a></span>
+          </div>
+        </div>
+
+        <div class="c-detail">
+          <div class="c-icon" aria-hidden="true">&#128222;</div>
+          <div class="c-detail-text">
+            <strong>Phone</strong>
+            <span><a href="tel:+12045550199">+1 (204) 555-0199</a></span>
+          </div>
+        </div>
+
+        <div class="c-detail">
+          <div class="c-icon" aria-hidden="true">&#127760;</div>
+          <div class="c-detail-text">
+            <strong>Website</strong>
+            <span><a href="https://www.lpsingh.dev" target="_blank" rel="noopener noreferrer">www.lpsingh.dev</a></span>
+          </div>
+        </div>
+
+        <div class="c-detail">
+          <div class="c-icon" aria-hidden="true">&#128483;</div>
+          <div class="c-detail-text">
+            <strong>LinkedIn</strong>
+            <span><a href="https://linkedin.com/in/lovepreetsingh" target="_blank" rel="noopener noreferrer">linkedin.com/in/lovepreetsingh</a></span>
+          </div>
+        </div>
+
+        <div class="avail-badge" aria-label="Currently available for new projects">
+          <span class="dot" aria-hidden="true"></span>
+          Available for new projects
+        </div>
+      </aside>
+
+      <!-- Form panel -->
+      <div class="form-panel">
+        <h2>Send a Message</h2>
+        <p>All fields marked with * are required.</p>
+
+        <form id="contactForm" action="index.html" method="get" novalidate aria-label="Contact form">
+
+          <!-- Name -->
+          <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Jane Doe"
+              autocomplete="name"
+              aria-required="true"
+              aria-describedby="nameErr"
+            />
+            <span class="error-msg" id="nameErr" role="alert">Please enter your full name.</span>
+          </div>
+
+          <!-- Phone + Email -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Phone Number *</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="2045550199"
+                autocomplete="tel"
+                aria-required="true"
+                aria-describedby="phoneErr"
+              />
+              <span class="error-msg" id="phoneErr" role="alert">Enter a valid 10-digit phone number.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="jane@example.com"
+                autocomplete="email"
+                aria-required="true"
+                aria-describedby="emailErr"
+              />
+              <span class="error-msg" id="emailErr" role="alert">Enter a valid email address.</span>
+            </div>
+          </div>
+
+          <!-- Comments -->
+          <div class="form-group">
+            <label for="comments">Message *</label>
+            <textarea
+              id="comments"
+              name="comments"
+              placeholder="Describe your project, question, or how I can help you..."
+              aria-required="true"
+              aria-describedby="commentsErr"
+            ></textarea>
+            <span class="error-msg" id="commentsErr" role="alert">Please enter a message.</span>
+          </div>
+
+          <!-- Actions -->
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <button type="reset" class="btn-reset-form" id="resetBtn">Reset</button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ═══════════════ FOOTER ═══════════════ -->
+  <footer id="footer" role="contentinfo">
+    <div class="f-inner">
+      <div class="f-left">
+        <p class="f-copy">&copy; 2026 Lovepreet Singh &mdash; All rights reserved.</p>
+        <p class="f-url"><a href="https://www.lpsingh.dev" target="_blank" rel="noopener noreferrer">www.lpsingh.dev</a></p>
+        <p class="f-address">274 Notre Dame Ave, Winnipeg, MB R3B 1N8 &nbsp;|&nbsp; Mon&ndash;Fri 9AM&ndash;6PM CST</p>
+      </div>
+      <nav aria-label="Footer navigation">
+        <ul role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/validation.js"></script>
+</body>
+</html>
